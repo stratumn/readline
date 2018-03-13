@@ -198,7 +198,8 @@ func (t *Terminal) ioloop() {
 }
 
 func (t *Terminal) Bell() {
-	fmt.Fprintf(t, "%c", CharBell)
+	// Disable bell
+	// fmt.Fprintf(t, "%c", CharBell)
 }
 
 func (t *Terminal) Close() error {
